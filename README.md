@@ -1,21 +1,17 @@
-Express & ES6 REST API Boilerplate
-==================================
+# Express & ES6 REST API Boilerplate
 
-This is a straightforward boilerplate for building REST APIs with ES6 and Express.
+This is a straightforward boilerplate for building REST APIs with ES6 and
+Express.
 
-- ES6 support via [babel](https://babeljs.io)
-- REST resources as middleware via [resource-router-middleware](https://github.com/developit/resource-router-middleware)
-- CORS support via [cors](https://github.com/troygoode/node-cors)
-- Body Parsing via [body-parser](https://github.com/expressjs/body-parser)
+* ES6 support via [babel](https://babeljs.io)
+* REST resources as middleware via
+  [resource-router-middleware](https://github.com/developit/resource-router-middleware)
+* CORS support via [cors](https://github.com/troygoode/node-cors)
+* Body Parsing via [body-parser](https://github.com/expressjs/body-parser)
+* Test via Mocha
+* Psql support via PG-Promise
 
-> Tip: If you are using [Mongoose](https://github.com/Automattic/mongoose), you can automatically expose your Models as REST resources using [restful-mongoose](https://git.io/restful-mongoose).
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/WbARjbDRQz5y3N6VBEMPU4LW/developit/express-es6-rest-api'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/WbARjbDRQz5y3N6VBEMPU4LW/developit/express-es6-rest-api.svg' />
-</a>
-
-Getting Started
----------------
+## Getting Started
 
 ```sh
 # clone it
@@ -34,8 +30,9 @@ PORT=8080 npm run dev
 # Start production server:
 PORT=8080 npm start
 ```
-Docker Support
-------
+
+## Docker Support
+
 ```sh
 cd express-es6-rest-api
 
@@ -49,11 +46,17 @@ docker run -p 8080:8080 es6/api-service
 #                 ^            ^
 #          bind the port    container tag
 #          to your host
-#          machine port   
-
+#          machine port
 ```
 
-License
--------
+## Test
+
+```
+yarn test
+
+yarn test:watch
+```
+
+## License
 
 MIT
